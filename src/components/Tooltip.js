@@ -6,18 +6,37 @@
 //   )
 // }
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-export const Tooltip = ({text, children}) => {
+// export const Tooltip = ({text, children}) => {
 
-  const [visible, setvisible]=useState(false)
+//   const [visible, setvisible]=useState(false)
 
-  return (
-    <div className='tooltip' onMouseLeave={()=>{setvisible(false)}} onMouseEnter={()=>{setvisible(true)}}>
-      {children}
-      {visible && <div className='tooltiptext' >{text}</div>}
-    </div>
-  )
-}
+//   return (
+//     <div className='tooltip' onMouseLeave={()=>{setvisible(false)}} onMouseEnter={()=>{setvisible(true)}}>
+//       {children}
+//       {visible && <div className='tooltiptext' >{text}</div>}
+//     </div>
+//   )
+// }
 
-export default Tooltip
+// export default Tooltip
+
+import React, { useState } from 'react';
+
+const Tooltip = ({ text, children }) => {
+    const [visible, setVisible] = useState(false);
+
+    return (
+        <div 
+            className="tooltip" 
+            onMouseEnter={() => setVisible(true)} 
+            onMouseLeave={() => setVisible(false)}
+        >
+            {children}
+            {visible && <div className="tooltiptext">{text}</div>}
+        </div>
+    );
+};
+
+export default Tooltip;

@@ -31,20 +31,38 @@
 // }
 
 // export default App
-import React, { useState } from 'react'
-import Tooltip from './Tooltip'
+// import React, { useState } from 'react'
+// import Tooltip from './Tooltip'
 
 
-export const App = () => {
+// export const App = () => {
  
-  return (
+//   return (
 
-    <div>
-      <Tooltip text="This is a Tooltip"><h2>Hover over me</h2>
-      </Tooltip>
-      <Tooltip text="This is another Tooltip"><h4>Hover over this Paragraph</h4></Tooltip>
-    </div>
-  )
-}
+//     <div>
+//       <Tooltip text="This is a Tooltip"><h2>Hover over me</h2>
+//       </Tooltip>
+//       <Tooltip text="This is another Tooltip"><h4>Hover over this Paragraph</h4></Tooltip>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+import React from 'react';
+import Tooltip from './Tooltip';
+
+const App = () => {
+    return (
+        <div>
+            <Tooltip text="This is a tooltip">
+                <h2>Hover over me</h2>
+            </Tooltip>
+            <Tooltip text="This is another tooltip">
+                <p>Hover over this paragraph</p>
+            </Tooltip>
+        </div>
+    );
+};
+
+export default App;
