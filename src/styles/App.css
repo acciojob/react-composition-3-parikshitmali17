@@ -2,11 +2,12 @@
 .tooltip {
     position: relative;
     display: inline-block;
+    background-color: red;
   }
   
   .tooltiptext {
     position: absolute;
-    background-color: black;
+   
     color: white;
     padding: 8px;
     border-radius: 4px;
@@ -15,5 +16,6 @@
     transform: translateX(-50%);
     white-space: nowrap;
     z-index: 10;
+    background-color: red;
   }
   
